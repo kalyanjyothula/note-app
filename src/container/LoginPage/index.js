@@ -22,8 +22,8 @@ import {
 export default function LoginPage(props) {
   useEffect(() => {
     const token = window.localStorage.getItem("userToken");
-    if (typeof token !== 'undefined' && token != null) window.location = "/home";
-  
+    if (typeof token !== "undefined" && token != null)
+      window.location = "/home";
   }, []);
   const dispatch = useDispatch();
   const { userDetails } = useSelector(loginPageSelector);
@@ -43,7 +43,7 @@ export default function LoginPage(props) {
         <title>Login</title>
         <meta name="description" content="Description of SignIn" />
       </Helmet>
-      <Header height={40} width={40} url="/home">
+      <Header height={40} width={40} url="/">
         <ButtonsWrapper>
           {/* <LoginButtonLink to="/login">
             <LogInButton>Log in</LogInButton>

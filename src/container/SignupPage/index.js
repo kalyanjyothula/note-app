@@ -61,7 +61,7 @@ export default function SignupPage(props) {
         <title>SignUp</title>
         <meta name="description" content="Description of SignUp" />
       </Helmet>
-      <Header height={40} width={40} url="/home">
+      <Header height={40} width={40} url="/">
         <ButtonsWrapper>
           <LoginButtonLink to="/login">
             <LogInButton>Log in</LogInButton>
